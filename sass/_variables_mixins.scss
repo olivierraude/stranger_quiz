@@ -1,0 +1,31 @@
+@font-face {
+    font-family: BenguiatStd;
+    src: url(../font/BenguiatStd-Medium.otf);
+  }
+
+/* Variables couleurs */
+$c_primary: #E8221C;
+$c_secondary: #718bfc;
+$c_Background_dark: rgb(39, 39, 39);
+$c_dark: rgb(65, 65, 65);
+$c_light: white;
+
+/* Variables typo */
+$f_text: 'BenguiatStd', serif;
+
+/* variables tailles écrans */
+$medium_screen : 768px;
+$big_screen : 992px;
+
+/* Mixins */
+@mixin flexbox($display, $direction, $justify, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin color($couleurBackground, $couleurTexte) {
+  background-color: $couleurBackground;
+  color: $couleurTexte;
+}

@@ -1,0 +1,68 @@
+@import "_variables_mixins.scss";
+@import "_intro.scss";
+@import "_question_window.scss";
+@import "_window.scss";
+@import "_animations.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background: url(../img/upside-down.jpg);
+  background-color: $c_secondary;
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: multiply;
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  width: 100vw;
+}
+
+footer {
+  /*Conteneur flex*/
+	align-items: center;
+  bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+  padding: 1%;
+  position: absolute;
+  width: 90%;
+  
+  > p {
+  /*Item flex*/
+  //flex: 1 1 auto;
+  
+  /*Décoration*/
+  color: $c_primary;
+  font-family: $f_text;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  }
+
+  > div {
+    /*Item flex*/
+    //flex: 0 0 auto;
+  
+    /*Décoration*/
+    color: $c_primary;
+    cursor: pointer;
+    font-size: 4rem;
+    opacity: 0;
+    
+    > i:hover {
+      color: $c_secondary;
+      text-shadow: 0px 0px 10px $c_primary;
+      transform: scale(1.2);
+    }
+  }
+}
+
