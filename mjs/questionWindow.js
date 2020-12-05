@@ -1,10 +1,10 @@
 import {
 	WordAnimation
-} from './WordAnimation.mjs';
+} from './WordAnimation.js';
 
 import {
 	Window
-} from './Window.mjs';
+} from './Window.js';
 
 export class Question {
 

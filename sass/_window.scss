@@ -9,19 +9,12 @@
 	
 	/*Conteneur flex en colonne*/
 	@include flexbox(flex, column, space-around, center);
-	//display: flex;
-	//flex-direction: column;
-	//justify-content: space-around;
-	//align-items: center;
 
 	/*Position*/
 	position: absolute;
 	
 	> div:nth-child(1) {
 		/*Dimensions et image*/
-		margin:0.5rem;
-		//width: 5rem;
-		//height: 5rem;
 		font-size: 5rem;
 		line-height: 5rem;
 		

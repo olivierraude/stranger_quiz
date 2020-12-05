@@ -25,7 +25,7 @@ $big_screen : 992px;
   align-items: $align;
 }
 
-@mixin color($couleurBackground, $couleurTexte) {
-  background-color: $couleurBackground;
-  color: $couleurTexte;
+@mixin color($backgroundcolor, $textColor) {
+  background-color: $backgroundcolor;
+  color: $textColor;
 }

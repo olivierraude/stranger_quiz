@@ -1,6 +1,6 @@
-import {Introduction} from "./Intro.mjs"
-import {Question} from "./questionWindow.mjs"
-import {Quiz} from "./quizList.mjs"
+import {Introduction} from "./Intro.js"
+import {Question} from "./questionWindow.js"
+import {Quiz} from "./quizList.js"
 
 const main = document.querySelector('main')
 

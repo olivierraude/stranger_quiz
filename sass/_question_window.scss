@@ -32,6 +32,10 @@ ul {
 
     animation: fade-in 5s ease;
 
+    li {
+        text-shadow: 0px 0px 10px $c_secondary;
+    }
+
     li:hover {
         color: darken($c_dark, 20%);
         cursor: pointer;
