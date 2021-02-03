@@ -5,6 +5,7 @@
 	font-family: $f_text;
 	font-size: 1.6rem;
 	text-shadow: 0px 0px 10px $c_primary;
+	z-index: 2;
 
 	
 	/*Conteneur flex en colonne*/
@@ -15,8 +16,12 @@
 	
 	> div:nth-child(1) {
 		/*Dimensions et image*/
+		font-family: sans-serif;
 		font-size: 5rem;
 		line-height: 5rem;
+		margin-right: 45px;
+		margin-top: -250px;
+
 		
 		cursor: pointer;
 	
@@ -32,5 +37,22 @@
 	> div:nth-child(2) {
 		/*Décoration*/
 		font-size: 3rem;
+		margin-top: -450px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.lastWindow > div:nth-child(1) {
+		font-size: 3rem;
+		//line-height: 5rem;
+		margin-right: 45px;
+		margin-top: -250px;
+	}
+
+	.lastWindow > div:nth-child(2) {
+		/*Décoration*/
+		font-size: 2rem;
+		padding: 10px;
 	}
 }
