@@ -203,7 +203,7 @@ export class Question {
 		text += `<br>Your best score is ${this.bestScore} / ${this.quiz.questions.length}.`		
 		text += `<br><br>Close the window to play again!`
 
-		let window = new Window(0, 0, width, height, "lastWindow", text, laPage, this.playAgain)
+		let window = new Window(0, 0, 800, 400, "lastWindow", text, laPage, this.playAgain)
 		
     } // Fin afficherFenetre
     
